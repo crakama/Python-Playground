@@ -12,7 +12,8 @@ import sys
 
 N = int(raw_input().strip())
 
-def controlSturctures(n): 
+
+def controlSturctures(n):
     if n % 2 == 0:
         if n in range(2, 6):
             print "Not Weird"
