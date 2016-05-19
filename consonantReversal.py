@@ -1,3 +1,12 @@
+
+"""
+    Given N strings, reverse and print each string such that the
+    positions of its vowels remain unchanged but all
+    its consonants are reversed
+
+"""
+
+
 N = "abcdefg"
 v = "aeiuo"
 # agfdecb
@@ -19,3 +28,4 @@ def consonantReversal(N):
     return revString
 
 consonantReversal(N)
+
