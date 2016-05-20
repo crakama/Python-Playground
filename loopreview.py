@@ -11,23 +11,29 @@ class OddEvenIndex:
         even = []
         odd = []
         for i in newString:
-            print i
+            even = []
+            odd = []
             for j in i:
+  
                 ind = i.index(j)
                 if ind % 2 == 0:
-                    even.append("".join(j))
-                    print even
+                          
+                    even.append(j)
+                    neweven = "".join(even)
+                    #print even
                 else:
-                    odd.append("".join(j))
                     
-        print "{}  {}".format(even,odd)
+                    odd.append(j)
+                    newodd = "".join(odd)
+                    
+            print "{} {}".format(neweven,newodd)
     
 testcasenum = int(raw_input())
 newString = []
+
 for i in range(0,testcasenum):
     string = raw_input()
     lenString = len(string)
     newString.append(string)
-print newString
 oddeven = OddEvenIndex()
 oddeven.oddevenIndexed(newString)
