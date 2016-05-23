@@ -1,9 +1,3 @@
-"""
-    Task given a S string, , of length  N that is indexed from 0 to N-1 ,
-    print its even-indexed and odd-indexed characters as  2 space-separated
-    strings on a single line (see the Sample below for more detail).
-    Note:  0 is considered to be an even index
-"""
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 class OddEvenIndex:
     def oddevenIndexed(self,newString):
@@ -12,21 +6,22 @@ class OddEvenIndex:
         for i in newString:
             even = []
             odd = []
-            for j in i:
+            for j in range(0, len(i)-1):
+                if j in i:
+                    ind = i.index(j)
 
-                ind = i.index(j)
                 if ind % 2 == 0:
-
+                          
                     even.append(j)
                     neweven = "".join(even)
                     #print even
                 else:
-
+                    
                     odd.append(j)
                     newodd = "".join(odd)
-
+                    
             print "{} {}".format(neweven,newodd)
-
+    
 testcasenum = int(raw_input())
 newString = []
 

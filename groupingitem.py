@@ -15,4 +15,20 @@ comparision between e1 and e2. If e1 is lexicographically smaller than e2 , then
 than .
 """
 
+def grouping(groupString):
+    group = [1,2,3,4,5,6,7,8,9]
+    for i in numstring:
+        if numstring.count(i)== 1:
+            print i,
+        elif numstring.count(i) == 2:
+            print i,
+
+
+
+for i in range(0, num):
+    numstring = int(raw_input())
+
+grouping(numstring)
+
+
 
