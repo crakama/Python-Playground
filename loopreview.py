@@ -17,7 +17,7 @@ class OddEvenIndex:
                 even = i[::2]
                 odd = i[1::2]
 
-                print "{} {}".format(neweven,newodd)
+                print "{} {}".format(even,odd)
 
 testcasenum = int(raw_input())
 newString = []

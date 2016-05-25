@@ -21,3 +21,23 @@ for z in range(0, dict_):
     dictlist2.append(string2)
 
 dictionary(dictlist,dictlist2)
+
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import sys
+
+dict_ = int(raw_input().strip())
+contacts = {}
+dictlist = []
+for i in range(dict_):
+    string = raw_input().strip().split(' ')
+    contacts[str(string[0])] = int(string[1])
+for i in range(dict_):
+    string2 = raw_input()
+    dictlist.append(string2)
+
+for line in dictlist:
+    if line in contacts:
+        print "{}={}".format(line, contacts[line])
+    else:
+        print 'Not found'
